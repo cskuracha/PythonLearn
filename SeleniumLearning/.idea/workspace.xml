@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0777403d-93ad-458a-8c3c-0177cb0ea5b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 Day/ComparisonOperators.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 Day/ComparisonOperators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +31,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.ArthOperators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.AssignmentOperators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ComparisonOperators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HelloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Identity_Membership.executor&quot;: &quot;Run&quot;,
-    &quot;Python.LogicalOperators.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Programming/Python/Selenium_Workspace/PyCharmProjects&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.ArthOperators.executor": "Run",
+    "Python.AssignmentOperators.executor": "Run",
+    "Python.ComparisonOperators.executor": "Run",
+    "Python.Fireworks.executor": "Run",
+    "Python.HelloWorld.executor": "Run",
+    "Python.Identity_Membership.executor": "Run",
+    "Python.LogicalOperators.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Programming/Python/Selenium_Workspace/PyCharmProjects",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.Identity_Membership">
+}]]></component>
+  <component name="RunManager" selected="Python.Fireworks">
     <configuration name="AssignmentOperators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SeleniumLearning" />
       <option name="ENV_FILES" value="" />
@@ -93,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Fireworks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SeleniumLearning" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,7 +106,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01 Day/HelloWorld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01 Day/Fireworks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Fireworks" />
         <item itemvalue="Python.Identity_Membership" />
         <item itemvalue="Python.AssignmentOperators" />
         <item itemvalue="Python.LogicalOperators" />
         <item itemvalue="Python.ComparisonOperators" />
-        <item itemvalue="Python.HelloWorld" />
       </list>
     </recent_temporary>
   </component>
