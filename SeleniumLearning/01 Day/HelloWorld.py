@@ -17,3 +17,6 @@ print("Hello","World","Chaitanya")
 
 #num1 = int(input("Enter Number:"))
 #print(type(num1))
+
+import this
+
