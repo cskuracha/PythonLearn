@@ -2,11 +2,15 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from pageObjects.loginPage import LoginPage
+from utilities.readProperties import ReadConfig
 
 class Test_001_Login:
-    baseURL = "https://admin-demo.nopcommerce.com/"
-    username = "admin@yourstore.com"
-    password = "admin"
+    # baseURL = "https://admin-demo.nopcommerce.com/"
+    # username = "admin@yourstore.com"
+    # password = "admin"
+    baseURL = ReadConfig.getApplicationUrl()
+    username = ReadConfig.getUserEmail()
+    password = ReadConfig.getUserPassword()
 
     def test_login(self, setup):
         self.driver = setup
@@ -16,7 +20,7 @@ class Test_001_Login:
         self.lp.setpassword(self.password)
         self.lp.clicklogin()
         act_title = self.driver.title
-        if act_title == "Dashboard / poCommerce administration":
+        if act_title == "Dashboard / nopCommerce administration":
             assert True
         else:
             self.driver.save_screenshot(".\\Screenshots\\" + "test_loginTitle.png")
