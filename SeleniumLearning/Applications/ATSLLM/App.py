@@ -7,7 +7,7 @@ import json
 
 load_dotenv() ## load all our environment variables
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key="AIzaSyBx2B9d4xpqxdQDFmO_Du7aRBAPb_xgyE8")
 
 def get_gemini_repsonse(input):
     model=genai.GenerativeModel('gemini-pro')
@@ -26,8 +26,7 @@ def input_pdf_text(uploaded_file):
 
 input_prompt="""
 Hey Act Like a skilled or very experience ATS(Application Tracking System)
-with a deep understanding of tech field,software engineering,data science ,data analyst
-and big data engineer. Your task is to evaluate the resume based on the given job description.
+with a deep understanding of tech field and Quality assurance and testing. Your task is to evaluate the resume based on the given job description.
 You must consider the job market is very competitive and you should provide 
 best assistance for improving thr resumes. Assign the percentage Matching based 
 on Jd and
