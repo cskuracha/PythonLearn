@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0777403d-93ad-458a-8c3c-0177cb0ea5b6" name="Changes" comment="" />
+    <list default="true" id="0777403d-93ad-458a-8c3c-0177cb0ea5b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../pyTest_Tutorial/source/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pyTest_Tutorial/source/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pyTest_Tutorial/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pyTest_Tutorial/tests/tests_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
