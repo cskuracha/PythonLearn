@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ab02d40-ddbf-4bb9-9006-f4ebfd031cca" name="Changes" comment="sample server/client program">
-      <change beforePath="$PROJECT_DIR$/../SeleniumLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4ab02d40-ddbf-4bb9-9006-f4ebfd031cca" name="Changes" comment="sample server/client program" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
