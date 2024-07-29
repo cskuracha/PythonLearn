@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0777403d-93ad-458a-8c3c-0177cb0ea5b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0777403d-93ad-458a-8c3c-0177cb0ea5b6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,31 +29,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.5Minute_Timer.executor": "Run",
-    "Python.5Minute_timer2.executor": "Run",
-    "Python.5_Minute_Block_CSV_Export.executor": "Run",
-    "Python.ATSLLM.executor": "Run",
-    "Python.App (1).executor": "Run",
-    "Python.ArthOperators.executor": "Run",
-    "Python.AssignmentOperators.executor": "Run",
-    "Python.ComparisonOperators.executor": "Run",
-    "Python.Fireworks.executor": "Run",
-    "Python.HelloWorld.executor": "Run",
-    "Python.Identity_Membership.executor": "Run",
-    "Python.LogicalOperators.executor": "Run",
-    "Python.Remove_Background.executor": "Run",
-    "Python.dice.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Programming/Python/Selenium_Workspace/PyCharmProjects",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.5Minute_Timer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5Minute_timer2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_Minute_Block_CSV_Export.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ATSLLM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.App (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.ArthOperators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.AssignmentOperators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ComparisonOperators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Fireworks.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HelloWorld.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Identity_Membership.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LogicalOperators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Remove_Background.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Programming/Python/Selenium_Workspace/PyCharmProjects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Programming\Python\Selenium_Workspace\PyCharmProjects\SeleniumLearning\Applications\ATSLLM" />
