@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Personal Expense Tracker</h1>
+    <p>Total Expenses: ${{ total }}</p>
+
+    <h2>Expenses by Category</h2>
+    <ul>
+        {% for category, amount in breakdown %}
+        <li>{{ category }}: ${{ amount }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('add_expense') }}">Add New Expense</a> |
+    <a href="{{ url_for('view_expenses') }}">View All Expenses</a>
+</body>
+</html>
