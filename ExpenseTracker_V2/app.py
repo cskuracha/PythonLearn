@@ -240,8 +240,9 @@ def generate_monthly_spending_chart():
     totals = [row['total'] for row in monthly_data]
 
     sns.set(style="whitegrid")
-    plt.figure(figsize=(10, 6))
-    sns.barplot(x=months, y=totals, palette="Blues_d")
+    plt.figure(figsize=(9, 5))
+    #sns.barplot(x=months, y=totals, palette="Blues_d")
+    sns.barplot(x=months, y=totals, hue = months)
 
     plt.title('Monthly Spending')
     plt.xlabel('Month')
