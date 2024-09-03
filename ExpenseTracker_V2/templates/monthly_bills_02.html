@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Monthly Bills{% endblock %}
+
+{% block content %}
+    <h2>Track Monthly Bills</h2>
+    <form method="post">
+        <label for="bill_name">Bill Name:</label><br>
+        <input type="text" id="bill_name" name="bill_name"><br><br>
+
+        <label for="amount">Amount:</label><br>
+        <input type="number" step="0.01" id="amount" name="amount"><br><br>
+
+        <label for="due_date">Due Date:</label><br>
+        <input type="date" id="due_date" name="due_date"><br><br>
+
+        <button type="submit">Add Bill</button>
+    </form>
+
+    <h3>Existing Bills</h3>
+    <ul>
+        {% for bill in bills %}
+            <li>{{ bill.bill_name }}: {{ bill.amount }} due on {{ bill.due_date }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Monthly Bills{% endblock %}
+
+{% block content %}
+    <h2>Monthly Bills</h2>
+
+    <form method="post" action="{{ url_for('monthly_bills') }}">
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" value="{{ current_month }}" readonly>
+
+        <label for="bill_name">Bill Name:</label>
+        <input type="text" id="bill_name" name="bill_name" required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+
+        <button type="submit">Add Bill</button>
+    </form>
+
+    <h3>Bill List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Bill Name</th>
+                <th>Amount</th>
+                <th>Paid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bill in bills %}
+            <tr>
+                <td>{{ bill['month'] }}</td>
+                <td>{{ bill['bill_name'] }}</td>
+                <td>${{ '{:.2f}'.format(bill['amount']) }}</td>
+                <td>{{ 'Yes' if bill['is_paid'] else 'No' }}</td>
+                <td>
+                    <form method="post" action="{{ url_for('update_bill_status', bill_id=bill['id']) }}">
+                        <!--label>
+                            <input type="checkbox" name="is_paid" {% if bill['is_paid'] == 'on' %}checked{% endif %}>
+                            Mark as Paid
+                        </label-->
+                            <label>
+                                <!-- Add debugging to see what is being passed -->
+                                {% if bill['is_paid'] %}
+                                    <input type="checkbox" name="is_paid" checked>
+                                {% else %}
+                                    <input type="checkbox" name="is_paid">
+                                {% endif %}
+                                Mark as Paid
+                            </label>
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

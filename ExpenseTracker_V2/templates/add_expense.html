@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Add Expense{% endblock %}
+
+{% block content %}
+    <h2>Add a New Expense</h2>
+    <form method="post" action="{{ url_for('add_expense') }}">
+        <label for="expense_name">Expense Name:</label><br>
+       <!-- <input type="text" id="expense_name" name="expense_name"><br><br> -->
+        <input type="text" id="expense_name" name="expense_name" autocomplete="off" onkeyup="debouncedFetchExpenseNames()">
+        <ul id="expense_suggestions" style="display: none; position: absolute; border: 1px solid #ddd; background: #fff; z-index: 1000;"></ul><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="amount">Amount:</label><br>
+        <input type="number" step="0.01" id="amount" name="amount"><br><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category">
+            {% for category in categories %}
+                <option value="{{ category.id }}">{{ category.name }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="payment_type">Payment Type:</label><br>
+        <select id="payment_type" name="payment_type">
+            {% for payment_type in payment_types %}
+                <option value="{{ payment_type.id }}">{{ payment_type.name }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <button type="submit">Add Expense</button>
+    </form>
+
+ <script>
+        let debounceTimer;
+        const debounceDelay = 300; // milliseconds
+
+        function debouncedFetchExpenseNames() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(fetchExpenseNames, debounceDelay);
+        }
+
+        function fetchExpenseNames() {
+            let query = document.getElementById('expense_name').value;
+            let suggestionsBox = document.getElementById('expense_suggestions');
+            if (query.length < 2) {
+                suggestionsBox.style.display = 'none';
+                return;
+            }
+
+            fetch(`/search_expenses?q=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    suggestionsBox.innerHTML = '';
+                    if (data.length === 0) {
+                        suggestionsBox.style.display = 'none';
+                        return;
+                    }
+                    data.forEach(name => {
+                        let listItem = document.createElement('li');
+                        listItem.textContent = name;
+                        listItem.style.padding = '10px';
+                        listItem.style.cursor = 'pointer';
+                        listItem.onmouseover = function() {
+                            this.style.backgroundColor = '#f0f0f0';
+                        };
+                        listItem.onmouseout = function() {
+                            this.style.backgroundColor = '#fff';
+                        };
+                        listItem.onclick = function() {
+                            document.getElementById('expense_name').value = name;
+                            suggestionsBox.style.display = 'none';
+                        };
+                        suggestionsBox.appendChild(listItem);
+                    });
+                    suggestionsBox.style.display = 'block';
+                })
+                .catch(error => console.error('Error fetching expense names:', error));
+        }
+    </script>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Expenses for {{ month }}{% endblock %}
+
+{% block content %}
+    <h2>Expenses for {{ month }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Expense Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Payment Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for expense in expenses %}
+            <tr>
+                <td>{{ expense.expense_name }}</td>
+                <td>{{ expense.date }}</td>
+                <td>{{ expense.amount }}</td>
+                <td>{{ expense.category }}</td>
+                <td>{{ expense.payment_type }}</td>
+                <td>{{ expense.description }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('monthly_spending') }}">Back to Monthly Overview</a>
+{% endblock %}

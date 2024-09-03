@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Add Payment Type{% endblock %}
+
+{% block content %}
+    <h2>Add a New Payment Type</h2>
+    <form method="post">
+        <label for="name">Payment Type Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <button type="submit">Add Payment Type</button>
+    </form>
+{% endblock %}

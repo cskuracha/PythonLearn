@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Summary{% endblock %}
+
+{% block content %}
+    <h2>Expense Summary</h2>
+    <p><strong>Total Amount Spent:</strong> {{ total_amount }}</p>
+
+    <h3>By Category</h3>
+    <ul>
+        {% for category, total in category_totals.items() %}
+            <li>{{ category }}: {{ total }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>By Payment Type</h3>
+    <ul>
+        {% for payment_type, total in payment_type_totals.items() %}
+            <li>{{ payment_type }}: {{ total }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
