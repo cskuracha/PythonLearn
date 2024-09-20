@@ -1,2 +1,2 @@
-import calc
-print(calc.calc.add(2,2))
+from calc import calc
+print(calc.add(2,3))
